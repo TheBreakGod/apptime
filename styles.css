@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/img/background.jpg') center no-repeat;
+    background-size: cover;
+    color: rgb(255, 114, 114);
+}
+
+.clock {
+    font-family: 'Handjet', 'Courier New', Courier, monospace;
+    background: rgba(221, 221, 221, 0.295);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(255, 164, 164);
+    position: absolute;
+    top: 50px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.clock:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgb(185, 0, 0);
+}
+
+#time {
+    font-size: 3rem;
+}
